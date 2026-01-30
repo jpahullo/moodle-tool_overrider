@@ -30,3 +30,4 @@ $plugin->requires  = 2024100700; // Requires Moodle 4.5 or later: https://moodle
 $plugin->component = 'tool_overrider'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->supported = [405, 501];
+$plugin->release   = '(Initial stable release)';
