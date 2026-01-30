@@ -1,0 +1,15 @@
+{
+  "moodle": {
+    "debug": true,
+    "dbname": "testdb",
+    "dbhost": "localhost"
+  },
+  "auth_ldap": {
+    "host_url": "ldaps://test.example.com",
+    "version": "3"
+  },
+  "local_myplug": {
+    "api_key": "test-key-123",
+    "enabled": true
+  }
+}

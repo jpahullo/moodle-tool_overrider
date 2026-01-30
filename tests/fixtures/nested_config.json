@@ -1,0 +1,18 @@
+{
+  "moodle": {
+    "behat_profiles": {
+      "default": {
+        "browser": "firefox",
+        "wd_host": "http://selenium:4444/wd/hub"
+      },
+      "chrome": {
+        "browser": "chrome",
+        "wd_host": "http://selenium:4444/wd/hub"
+      }
+    },
+    "dboptions": {
+      "dbport": 3306,
+      "dbcollation": "utf8mb4_unicode_ci"
+    }
+  }
+}

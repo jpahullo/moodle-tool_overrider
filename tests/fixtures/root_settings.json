@@ -1,0 +1,6 @@
+{
+  "moodle": {
+    "debug": true
+  },
+  "root_setting": "value"
+}

@@ -1,0 +1,6 @@
+{
+  "moodle": {
+    "sitename": "Test Site with UTF-8: éàüñö",
+    "welcome": "Welcome message: αβγ 中文 한글"
+  }
+}

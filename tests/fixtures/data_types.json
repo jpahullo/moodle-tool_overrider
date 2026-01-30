@@ -1,0 +1,12 @@
+{
+  "moodle": {
+    "string_value": "text",
+    "int_value": 42,
+    "float_value": 3.14,
+    "bool_true": true,
+    "bool_false": false,
+    "null_value": null,
+    "array_value": [1, 2, 3],
+    "empty_string": ""
+  }
+}

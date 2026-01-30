@@ -1,0 +1,10 @@
+{
+  "moodle": {
+    "dbname": "moodle",
+    "dbhost": "localhost",
+    "dbuser": "moodleuser",
+    "dbpass": "moodlepass",
+    "wwwroot": "http://localhost/moodle",
+    "dataroot": "/var/www/moodledata"
+  }
+}
