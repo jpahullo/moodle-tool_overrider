@@ -144,7 +144,7 @@ final class settings_overrider_test extends \basic_testcase {
      */
     public function test_settings_from_returns_void(): void {
         $result = settings_overrider::settings_from($this->cfg, $this->get_fixture('valid_config.json'));
-        $this->assertNull($result, 'settings_from should return void (null)');
+        $this->assertNull($result);
     }
 
     /**

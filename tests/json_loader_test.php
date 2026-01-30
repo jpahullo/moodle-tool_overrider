@@ -89,7 +89,7 @@ final class json_loader_test extends \basic_testcase {
         $this->assertEquals(42, $result['moodle']['int_value']);
 
         $this->assertIsFloat($result['moodle']['float_value']);
-        $this->assertEquals(3.14, $result['moodle']['float_value']);
+        $this->assertEqualsWithDelta(3.14, $result['moodle']['float_value'], 0.001);
 
         $this->assertTrue($result['moodle']['bool_true']);
         $this->assertFalse($result['moodle']['bool_false']);

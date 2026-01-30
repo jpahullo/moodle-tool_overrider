@@ -266,17 +266,20 @@ function load_plugin_loader(string $extension): \tool_overrider\local\config_loa
  *
  * @param mixed $data The data to check
  * @param string $path Current path in the structure
- * @param array &$warnings Array to collect warnings
+ * @param array $warnings Array to collect warnings
+ * @return void
  */
-function check_empty_values($data, $path, &$warnings) {
-    if (is_array($data)) {
-        foreach ($data as $key => $value) {
-            $currentpath = $path ? "{$path}.{$key}" : $key;
-            if (is_string($value) && $value === '') {
-                $warnings[] = "Empty string value at: {$currentpath}";
-            } else if (is_array($value)) {
-                check_empty_values($value, $currentpath, $warnings);
-            }
+function check_empty_values(mixed $data, string $path, array &$warnings): void {
+    if (!is_array($data)) {
+        return;
+    }
+
+    foreach ($data as $key => $value) {
+        $currentpath = $path ? "{$path}.{$key}" : $key;
+        if (is_string($value) && $value === '') {
+            $warnings[] = "Empty string value at: {$currentpath}";
+        } else if (is_array($value)) {
+            check_empty_values($value, $currentpath, $warnings);
         }
     }
 }
