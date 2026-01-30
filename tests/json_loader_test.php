@@ -130,7 +130,7 @@ final class json_loader_test extends \basic_testcase {
         $extensions = json_loader::get_supported_extensions();
 
         $this->assertIsArray($extensions);
-        $this->assertContains('json', $extensions);
+        $this->assertTrue(in_array('json', $extensions, true));
         $this->assertCount(1, $extensions);
     }
 
